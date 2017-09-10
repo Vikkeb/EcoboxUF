@@ -7,7 +7,7 @@
 }
 /* =======================================================
 *
-* 	Template Style 
+* 	Template Style
 *	Edit this section
 *
 * ======================================================= */
@@ -117,14 +117,17 @@ h1, h2, h3, h4, h5, h6 {
 header, #fh5co-intro-section, #fh5co-services-section, #fh5co-featured-work-section,
 #fh5co-common-section, #fh5co-blog-section, #footer, #fh5co-contact-section,
 #fh5co-work-section {
-  padding-bottom: 5em;
+  padding-bottom: 2em;
 }
 
 header {
-  padding-top: 3em;
+  padding-top: 2em;
 }
 header .fh5co-navbar-brand {
-  padding-bottom: 3em;
+  padding-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 header .fh5co-navbar-brand .fh5co-logo {
   position: relative;
@@ -146,6 +149,12 @@ header .fh5co-navbar-brand .fh5co-logo:after {
 header .fh5co-navbar-brand .fh5co-logo:hover {
   text-decoration: none;
 }
+
+header .logo {
+  width: 350px;
+  height: auto;
+}
+
 header #fh5co-main-nav > ul {
   padding: 0;
   margin: 0;
