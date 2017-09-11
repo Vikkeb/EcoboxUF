@@ -19,14 +19,14 @@ body {
 }
 
 a {
-  color: #F03861;
+  color: #5AAC16;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover {
   text-decoration: none;
-  color: #F03861;
+  color: #4D891B;
 }
 a:focus, a:active {
   outline: none;
@@ -54,17 +54,17 @@ h1, h2, h3, h4, h5, h6 {
 
 ::-webkit-selection {
   color: #fcfcfc;
-  background: #f56f8d;
+  background: #5AAC16;
 }
 
 ::-moz-selection {
   color: #fcfcfc;
-  background: #f56f8d;
+  background: #5AAC16;
 }
 
 ::selection {
   color: #fcfcfc;
-  background: #f56f8d;
+  background: #5AAC16;
 }
 
 .btn {
@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
 }
 .btn.btn-primary {
-  background: #F03861;
+  background: #5AAC16;
   color: #fff;
   border: none !important;
   border: 2px solid transparent !important;
@@ -151,8 +151,8 @@ header .fh5co-navbar-brand .fh5co-logo:hover {
 }
 
 header .logo {
-  width: 350px;
-  height: auto;
+  height: 20vh;
+
 }
 
 header #fh5co-main-nav > ul {
@@ -875,6 +875,11 @@ input[type="text"] {
   #map {
     height: 200px;
   }
+}
+
+#footer {
+  padding-top: 3em;
+  background-color: #eee;
 }
 
 #footer p {
