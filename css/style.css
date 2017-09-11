@@ -111,7 +111,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: -15px;
   width: 20px;
   height: 3px;
-  background: #F03861;
+  background: #5BAC17;
 }
 
 header, #fh5co-intro-section, #fh5co-services-section, #fh5co-featured-work-section,
@@ -185,7 +185,7 @@ header #fh5co-main-nav > ul li a.active:before {
   content: '';
   top: -5px;
   right: -7px;
-  background: #F03861;
+  background: #5BAC17;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
@@ -831,10 +831,7 @@ header #fh5co-main-nav > ul li:first-child {
   top: .3em;
   left: 0;
   font-size: 22px;
-  color: #F03861;
-}
-.contact-info li a {
-  color: #F03861;
+  color: #4C881B;
 }
 
 .form-control {
