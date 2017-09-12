@@ -646,23 +646,38 @@ header #fh5co-main-nav > ul li:first-child {
 }
 
 .fh5co-table2-color-2 {
-  background: #F87D09 !important;
+  background-image: url("images/food.svg");
+  background: #219653 !important;
 }
 
 .fh5co-table2-color-3 {
-  background: #17E7A4 !important;
+  background: #2F80ED !important;
 }
 
 .fh5co-table2-color-4 {
-  background: #F9C535 !important;
+  background: #F2604A !important;
 }
 
-.fh5co-table2-color-5 {
-  background: #51DACF !important;
+.icon {
+color: white;
+width: 100px;
+height: auto;
 }
 
-.fh5co-table2-color-6 {
-  background: #FF7676 !important;
+.icon-food {
+background-image: url("images/food.svg");
+}
+
+.icon-compost {
+background-image: url("images/compost.svg");
+}
+
+.icon-planet {
+background-image: url("images/planet.svg");
+}
+
+.icon-recycle {
+background-image: url("images/recycle.svg");
 }
 
 @media screen and (max-width: 992px) {
