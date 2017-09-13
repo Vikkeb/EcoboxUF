@@ -114,17 +114,18 @@ h1, h2, h3, h4, h5, h6 {
   background: #5BAC17;
 }
 
-header, #fh5co-intro-section, #fh5co-services-section, #fh5co-featured-work-section,
+#fh5co-intro-section, #fh5co-services-section, #fh5co-featured-work-section,
 #fh5co-common-section, #fh5co-blog-section, #footer, #fh5co-contact-section,
 #fh5co-work-section {
-  padding-bottom: 2em;
+  padding-bottom: 5em;
 }
 
 header {
-  padding-top: 2em;
+  height: 330px;
+  margin-top: 50px;
 }
+
 header .fh5co-navbar-brand {
-  padding-bottom: 2em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -152,33 +153,38 @@ header .fh5co-navbar-brand .fh5co-logo:hover {
 
 header .logo {
   height: 20vh;
-
 }
 
-header #fh5co-main-nav > ul {
-  padding: 0;
-  margin: 0;
+header .fh5co-main-nav > ul {
+  width: 100%;
+  padding: 2em 0 2em 0;
+  margin-bottom: 0px;
 }
-header #fh5co-main-nav > ul li {
+
+.fixed-header {
+  position: fixed;
+  top:0; left:0;
+  width: 100%;
+  background-color: white;
+  z-index: 10;
+  -webkit-box-shadow: 0px 1px 15px rgba(100, 100, 100, 0.25);
+  -moz-box-shadow: 0px 1px 15px rgba(100, 100, 100, 0.25);
+  box-shadow: 0px 1px 15px rgba(100, 100, 100, 0.25);
+}
+
+header .fh5co-main-nav > ul li {
   list-style: none;
   display: inline-block;
   margin-left: 40px;
   font-size: 18px;
 }
-@media screen and (max-width: 768px) {
-  header #fh5co-main-nav > ul li {
-    display: block;
-    margin-left: 0;
-    margin-bottom: 15px;
-  }
-}
-header #fh5co-main-nav > ul li a {
+header .fh5co-main-nav > ul li a {
   padding-bottom: 5px;
   color: #000;
   position: relative;
   font-weight: 400;
 }
-header #fh5co-main-nav > ul li a.active:before {
+header .fh5co-main-nav > ul li a.active:before {
   position: absolute;
   width: 7px;
   height: 7px;
@@ -191,11 +197,11 @@ header #fh5co-main-nav > ul li a.active:before {
   -ms-border-radius: 2px;
   border-radius: 2px;
 }
-header #fh5co-main-nav > ul li a:hover, header #fh5co-main-nav > ul li a:focus {
+header .fh5co-main-nav > ul li a:hover, header .fh5co-main-nav > ul li a:focus {
   text-decoration: none;
   color: #000;
 }
-header #fh5co-main-nav > ul li:first-child {
+header .fh5co-main-nav > ul li:first-child {
   margin-left: 0;
 }
 
@@ -420,27 +426,45 @@ header #fh5co-main-nav > ul li:first-child {
   opacity: 1;
 }
 
-.services-num {
-  position: relative;
+.Employee {
+  Display: flex;
 }
-.services-num .number-holder {
-  position: absolute;
-  font-size: 100px;
-  font-weight: 700;
-  top: 0;
-  left: 15px;
-  line-height: 100px;
-  color: #000;
+
+.Employee img {
+  margin-right: 15px;
 }
-.services-num .desc {
-  padding-left: 140px;
+
+.Employee-right {
+  text-align: right;
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
-.services-num .desc h3 {
+
+.Employee-right h3 {
+  justify-content: flex-end;
+}
+
+.Employee-right img {
+  margin-left: 15px;
+  margin-right: 0px;
+}
+
+.Employee h3 {
+  Display: flex;
+}
+
+.EmployeeAvatar {
+  width: 100%;
+  background-color: gray;
+}
+
+.Employee h3 {
   font-weight: 300;
   line-height: 26px;
   font-size: 24px;
   margin-bottom: 8px;
 }
+
 .services-num.services-num-text-right {
   text-align: right;
 }
