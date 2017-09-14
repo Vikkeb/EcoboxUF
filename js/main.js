@@ -1,3 +1,12 @@
+$(window).scroll(function(){
+		if ($(window).scrollTop() >= 240) {
+			 $('.fh5co-main-nav').addClass('fixed-header');
+		}
+		else {
+			 $('.fh5co-main-nav').removeClass('fixed-header');
+		}
+});
+
 ;(function () {
 
 	'use strict';

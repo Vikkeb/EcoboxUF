@@ -121,8 +121,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-  height: 330px;
-  margin-top: 50px;
+display: flex;
+width: 100%;
+justify-content: center;
+height: 325px;
 }
 
 header .fh5co-navbar-brand {
@@ -152,13 +154,17 @@ header .fh5co-navbar-brand .fh5co-logo:hover {
 }
 
 header .logo {
-  height: 20vh;
+  height: 225px;
 }
 
 header .fh5co-main-nav > ul {
   width: 100%;
-  padding: 2em 0 2em 0;
+  padding: 24px 0 25px 0;
   margin-bottom: 0px;
+}
+
+.fh5co-main-nav {
+  align-self: flex-end;
 }
 
 .fixed-header {
@@ -170,6 +176,12 @@ header .fh5co-main-nav > ul {
   -webkit-box-shadow: 0px 1px 15px rgba(100, 100, 100, 0.25);
   -moz-box-shadow: 0px 1px 15px rgba(100, 100, 100, 0.25);
   box-shadow: 0px 1px 15px rgba(100, 100, 100, 0.25);
+}
+
+.text-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 header .fh5co-main-nav > ul li {
