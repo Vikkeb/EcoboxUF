@@ -30,11 +30,6 @@ $(document).ready(function(){
 			// Add class to target
 			$(hash).addClass("active");
 
-			// Remove thy class after timeout
-			setTimeout(function(){
-				$(hash).removeClass("active");
-			}, 2000);
-
     // Using jQuery's animate() method to add smooth page scroll
     // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area (the speed of the animation)
 			$('html, body').animate({

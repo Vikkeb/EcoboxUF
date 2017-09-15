@@ -134,7 +134,7 @@ header .navbar {
 }
 
 header a {
-  color: #BDC4D0
+  color: #BDC4D0;
 }
 
 header .logo {
@@ -146,8 +146,11 @@ box-shadow: 0px 6px 16px -2px rgba(0, 0, 0, 0.3);
 }
 
 nav .active {
-  color: #5AAC16 !important;
   box-shadow: inset 0 -3px 0 0 #5AAC16;
+}
+
+nav > li .active > a {
+  color: #5AAC16;
 }
 
 #fh5co-intro-section h2 {
