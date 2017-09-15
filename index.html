@@ -47,29 +47,31 @@
 	<![endif]-->
 
 	</head>
-	<body id="index">
+	<body id="index" data-spy="scroll" data-target="#scroll-spy">
+
 	<header>
-		<div class=".container-fluid text-center">
-			<div class="fh5co-navbar-brand">
-				<img class="logo" src="images/group.svg"></img>
+		<img class="logo" src="images/group.svg"></img>
+		<nav class="navbar" id="scroll-spy">
+			<div class=".container-fluid">
+
+				<div class="collapse navbar-collapse" id="scroll-spy">
+					<ul class="nav navbar-nav">
+						<li><a href="#index">Startsida</a></li>
+						<li><a href="#work">Vår Tjänst</a></li>
+						<li><a href="#about">Om Oss</a></li>
+						<li><a href="#contact">Kontakt</a></li>
+					</ul>
+				</div>
 			</div>
-			<nav class="fh5co-main-nav" role="navigation">
-				<ul>
-					<li><a href="#index" class="active">Startsida</a></li>
-					<li><a href="#work">Vår Tjänst</a></li>
-					<li><a href="#about">Om Oss</a></li>
-					<li><a href="#contact">Kontakt</a></li>
-				</ul>
-			</nav>
-		</div>
+		</nav>
 	</header>
 
-	<div class="owl-carousel owl-carousel1 owl-carousel-fullwidth fh5co-light-arrow animate-box" data-animate-effect="fadeIn">
-		<div class="item"><a href="images/featured-1.jpg" class="image-popup"><img src="images/featured-1.jpg" alt="image"></a></div>
-		<div class="item"><a href="images/featured-2.jpg" class="image-popup"><img src="images/featured-2.jpg" alt="image"></a></div>
-	</div>
+	<section class="owl-carousel owl-carousel1 owl-carousel-fullwidth fh5co-light-arrow animate-box" data-animate-effect="fadeIn">
+		<div class="item"><a class="image-popup"><img src="images/featured-1.jpg" alt="image"></a></div>
+		<div class="item"><a class="image-popup"><img src="images/featured-2.jpg" alt="image"></a></div>
+	</section>
 
-	<div id="fh5co-intro-section">
+	<section id="intro">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 text-center">
@@ -78,10 +80,9 @@
 				</div>
 			</div>
 		</div>
-	</div><!-- end fh5co-intro-section -->
+	</section><!-- end fh5co-intro-section -->
 
-	<div id="fh5co-services-section">
-		<a class="anchor" id="work">
+	<section id="work">
 		<div class="container">
 			<div class="heading-section text-center">
 				<h2>Vår Tjänst</h2>
@@ -126,11 +127,9 @@
 				</div>
 			</div>
 		</div>
-		</a>
-	</div>
+	</section><!-- end: fh5co-services-section -->
 
-	</div><!-- end: fh5co-services-section -->
-	<div class="fh5co-parallax" style="background-image: url(images/hero-1.jpg);" data-stellar-background-ratio="0.5">
+	<section class="fh5co-parallax" style="background-image: url(images/hero-1.jpg);" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
@@ -142,51 +141,85 @@
 				</div>
 			</div>
 		</div>
-	</div><!-- end: fh5co-parallax -->
-	<div id="fh5co-common-section">
-	<a class="anchor" id="about">
+	</section><!-- end: fh5co-parallax -->
+
+	<section id="about">
 		<div class="container">
 			<div class="heading-section text-center">
 				<h2>Om Oss</h2>
 			</div>
-
-			<div class="row">
+			<div class="row about">
 				<div class="col-md-10 col-md-offset-1">
-					<div class="col-md-6 col-sm-6 Employee animate-box">
-						<img class="EmployeeAvatar"></img>
-						<div class="description">
-							<h3>Namn Efternamn</h3>
-							<p>Far far away, behind the word mountains, far from the countries.</p>
+					<div class="col-md-3 col-sm-3 animate-box">
+						<div class="team-section-grid" style="background-image: url(images/avatar.png);">
+							<div class="overlay-section">
+								<div class="desc">
+									<h3>John Doe</h3>
+									<span>Chief Executive Officer</span>
+									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+									<p class="fh5co-social-icons">
+										<a href="#"><i class="icon-twitter-with-circle"></i></a>
+										<a href="#"><i class="icon-facebook-with-circle"></i></a>
+										<a href="#"><i class="icon-instagram-with-circle"></i></a>
+									</p>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="col-md-6 col-sm-6 Employee animate-box">
-						<img class="EmployeeAvatar"></img>
-						<div class="description">
-							<h3>Namn Efternamn</h3>
-							<p>Far far away, behind the word mountains, far from the countries.</p>
+					<div class="col-md-3 col-sm-3 animate-box">
+						<div class="team-section-grid" style="background-image: url(images/avatar.png);">
+							<div class="overlay-section">
+								<div class="desc">
+									<h3>John Doe</h3>
+									<span>Chief Executive Officer</span>
+									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+									<p class="fh5co-social-icons">
+										<a href="#"><i class="icon-twitter-with-circle"></i></a>
+										<a href="#"><i class="icon-facebook-with-circle"></i></a>
+										<a href="#"><i class="icon-instagram-with-circle"></i></a>
+									</p>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="col-md-6 col-sm-6 Employee Employee-right animate-box">
-						<div class="description">
-							<h3>Namn Efternamn</h3>
-							<p>Far far away, behind the word mountains, far from the countries.</p>
+					<div class="col-md-3 col-sm-3 animate-box">
+						<div class="team-section-grid" style="background-image: url(images/avatar.png);">
+							<div class="overlay-section">
+								<div class="desc">
+									<h3>John Doe</h3>
+									<span>Chief Executive Officer</span>
+									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+									<p class="fh5co-social-icons">
+										<a href="#"><i class="icon-twitter-with-circle"></i></a>
+										<a href="#"><i class="icon-facebook-with-circle"></i></a>
+										<a href="#"><i class="icon-instagram-with-circle"></i></a>
+									</p>
+								</div>
+							</div>
 						</div>
-						<img class="EmployeeAvatar"></img>
 					</div>
-					<div class="col-md-6 col-sm-6 Employee Employee-right animate-box">
-						<div class="description">
-							<h3>Namn Efternamn</h3>
-							<p>Far far away, behind the word mountains, far from the countries.</p>
+					<div class="col-md-3 col-sm-3 animate-box">
+						<div class="team-section-grid" style="background-image: url(images/avatar.png);">
+							<div class="overlay-section">
+								<div class="desc">
+									<h3>John Doe</h3>
+									<span>Chief Executive Officer</span>
+									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+									<p class="fh5co-social-icons">
+										<a href="#"><i class="icon-twitter-with-circle"></i></a>
+										<a href="#"><i class="icon-facebook-with-circle"></i></a>
+										<a href="#"><i class="icon-instagram-with-circle"></i></a>
+									</p>
+								</div>
+							</div>
 						</div>
-						<img class="EmployeeAvatar"></img>
 					</div>
 				</div>
 			</div>
-
 		</div>
-	</a>
-	</div><!-- end fh5co-common-section -->
-	<div class="fh5co-parallax" style="background-image: url(images/hero-2.jpg);" data-stellar-background-ratio="0.5">
+	</section><!-- end fh5co-common-section -->
+
+	<section class="fh5co-parallax" style="background-image: url(images/hero-2.jpg);" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
@@ -198,9 +231,9 @@
 				</div>
 			</div>
 		</div>
-	</div><!-- end: fh5co-parallax -->
-	<div id="fh5co-contact-section">
-	<a class="anchor" id="contact">
+	</section><!-- end: fh5co-parallax -->
+
+	<section id="contact">
 		<div class="container">
 			<div class="heading-section text-center">
 				<h2>Kontakta Oss</h2>
@@ -240,8 +273,8 @@
 				</div>
 			</div>
 		</div>
-	</a>
-	</div>
+	</section>
+
 	<footer>
 		<div id="footer" class="fh5co-border-line">
 			<div class="container">

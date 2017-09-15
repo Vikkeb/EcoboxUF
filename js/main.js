@@ -1,10 +1,55 @@
 $(window).scroll(function(){
-		if ($(window).scrollTop() >= 240) {
-			 $('.fh5co-main-nav').addClass('fixed-header');
+		if ($(window).scrollTop() >= 238) {
+			 $('.navbar').addClass('navbar-fixed-top');
 		}
 		else {
-			 $('.fh5co-main-nav').removeClass('fixed-header');
+			 $('.navbar').removeClass('navbar-fixed-top');
 		}
+});
+
+$(document).ready(function(){
+
+	// Scrollspy initiation
+	$('body').scrollspy({
+		target: '#scroll-spy',
+		offset: 600
+	});
+
+	$('nav.navbar a, .scrollTop').click(function(event){
+		// Make sure this.hash has a value before overriding default behavior
+		if (this.hash !== "") {
+			// Prevent default anchor click behavior
+			event.preventDefault();
+
+			// Store hash (#)
+			var hash = this.hash;
+
+			// Ensure no section has relevant class
+			$('section').removeClass("active");
+
+			// Add class to target
+			$(hash).addClass("active");
+
+			// Remove thy class after timeout
+			setTimeout(function(){
+				$(hash).removeClass("active");
+			}, 2000);
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area (the speed of the animation)
+			$('html, body').animate({
+				scrollTop: $(hash).offset().top - 86
+			}, 600, function(){
+
+				// Add hash (#) to URL when done scrolling (default click behavior)
+				window.location.hash = hash;
+			});
+
+			// Collapse Navbar for mobile view
+			$(".navbar-collapse").collapse('hide');
+		}
+
+	});
 });
 
 ;(function () {
