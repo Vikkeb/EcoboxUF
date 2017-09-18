@@ -118,11 +118,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-display: flex;
-flex-direction: column;
-width: 100%;
-justify-content: flex-end;
-height: 325px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-end;
+  height: 325px;
 }
 
 header .navbar {
@@ -130,11 +130,11 @@ header .navbar {
   justify-content: center;
   background-color: white;
   margin-bottom: 0px;
-  padding: 15px 0 15px 0;
 }
 
 header a {
   color: #BDC4D0;
+  margin: 5px 0 5px 0;
 }
 
 header .logo {
@@ -142,15 +142,19 @@ header .logo {
 }
 
 .navbar-fixed-top {
-box-shadow: 0px 6px 16px -2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 6px 16px -2px rgba(0, 0, 0, 0.3);
 }
 
 nav .active {
-  box-shadow: inset 0 -3px 0 0 #5AAC16;
+  box-shadow: inset 0 -5px 0 0 #5AAC16;
 }
 
-nav > li .active > a {
+header .active a {
   color: #5AAC16;
+}
+
+.navbar {
+  border: 0;
 }
 
 #fh5co-intro-section h2 {
@@ -401,9 +405,8 @@ nav > li .active > a {
   Display: flex;
 }
 
-.EmployeeAvatar {
-  width: 100%;
-  background-color: gray;
+.Avatar p {
+  margin:0;
 }
 
 .Employee h3 {
@@ -521,7 +524,7 @@ nav > li .active > a {
 }
 
 .fhco-hero2 {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .fhco-hero2 img {
   margin-top: -50px;
@@ -544,6 +547,13 @@ nav > li .active > a {
   font-weight: 400;
   font-weight: 20px;
 }
+
+.fh5co-table2 {
+  background-size: calc(100% - 1em) !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+
 .fh5co-services .fh5co-table2 {
   display: table;
   width: 70px;
@@ -746,13 +756,16 @@ background-image: url("images/recycle.svg");
 .about img {
   margin-bottom: 50px;
 }
-.about .team-section-grid {
+
+.avatar {
+  padding-bottom: 25%;
   position: relative;
   background-size: cover;
-  height: 450px;
-  margin-bottom: 30px;
+  margin: 0 0.5em 30px 0.5em;
+  width: calc(25% - 1em);
 }
-.about .team-section-grid .overlay-section {
+
+.avatar .overlay-section {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -764,31 +777,31 @@ background-image: url("images/recycle.svg");
   -o-transition: 0.6s;
   transition: 0.6s;
 }
-.about .team-section-grid .overlay-section h3 {
+.avatar .overlay-section h3 {
   color: #fff;
   margin-bottom: 10px;
   font-size: 24px;
 }
-.about .team-section-grid .overlay-section p {
+.avatar .overlay-section p {
   color: rgba(255, 255, 255, 0.8);
 }
-.about .team-section-grid .overlay-section p.fh5co-social-icons a:hover, .about .team-section-grid .overlay-section p.fh5co-social-icons a:focus {
+.avatar .overlay-section p.fh5co-social-icons a:hover, .about .avatar .overlay-section p.fh5co-social-icons a:focus {
   text-decoration: none !important;
 }
-.about .team-section-grid .overlay-section p.fh5co-social-icons i {
+.avatar .overlay-section p.fh5co-social-icons i {
   font-size: 32px;
 }
-.about .team-section-grid .overlay-section span {
+.avatar .overlay-section span {
   color: #fff;
   display: block;
 }
-.about .team-section-grid .overlay-section .desc {
+.avatar .overlay-section .desc {
   position: absolute;
   bottom: 0;
   left: 30px;
   right: 30px;
 }
-.about .team-section-grid:hover .overlay-section {
+.avatar:hover .overlay-section {
   opacity: 1;
 }
 .about .fh5co-social-icons a {
