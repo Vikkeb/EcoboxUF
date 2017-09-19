@@ -51,6 +51,19 @@ $(document).ready(function(){
 
 	'use strict';
 
+// mobile parallax
+	var ua = navigator.userAgent,
+		isMobileWebkit = /WebKit/.test(ua) && /Mobile/.test(ua);
+
+	if (isMobileWebkit) {
+  	$('html').addClass('mobile');
+	}
+
+	var iScrollInstance;
+		if (isMobileWebkit) {
+		  iScrollInstance = new iScroll('parallax-scroller');
+		}
+
 	// iPad and iPod detection
 	var isiPad = function(){
 		return (navigator.platform.indexOf("iPad") != -1);
