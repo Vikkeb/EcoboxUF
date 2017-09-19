@@ -117,6 +117,10 @@ h1, h2, h3, h4, h5, h6 {
   padding: 100px 0 50px 0;
 }
 
+#work {
+  padding-top: 0px;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -758,10 +762,11 @@ background-image: url("images/recycle.svg");
 }
 
 .avatar {
-  padding-bottom: 25%;
   position: relative;
   background-size: cover;
+  background-position: center;
   margin: 0 0.5em 30px 0.5em;
+  padding-bottom: 25%;
   width: calc(25% - 1em);
 }
 
@@ -804,6 +809,16 @@ background-image: url("images/recycle.svg");
 .avatar:hover .overlay-section {
   opacity: 1;
 }
+
+@media screen and (max-width: 768px) {
+
+.avatar {
+  padding-bottom: 100%;
+  width: 100%;
+}
+
+}
+
 .about .fh5co-social-icons a {
   color: rgba(255, 255, 255, 0.7);
   cursor: pointer;
