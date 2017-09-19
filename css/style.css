@@ -161,6 +161,10 @@ header .active a {
   border: 0;
 }
 
+.row {
+  margin: 0;
+}
+
 #fh5co-intro-section h2 {
   font-size: 40px;
   line-height: 1.5em;
@@ -173,7 +177,6 @@ header .active a {
 }
 
 .owl-carousel {
-
 }
 
 /* Owl Override Style */
@@ -815,6 +818,15 @@ background-image: url("images/recycle.svg");
 .avatar {
   padding-bottom: 100%;
   width: 100%;
+  margin: 15px 0 0 0;
+}
+
+.container {
+  padding: 0;
+}
+
+.row {
+  padding: 0 10px 0 10px
 }
 
 }
