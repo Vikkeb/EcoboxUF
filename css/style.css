@@ -460,10 +460,7 @@ header .active a {
   }
 }
 
-.fh5co-table,
-.fh5co-table-cell,
-.fh5co-hero,
-.fh5co-parallax {
+.fh5co-table, .fh5co-table-cell, .fh5co-hero, .fh5co-parallax {
   height: 500px;
 }
 
@@ -485,9 +482,14 @@ header .active a {
 
 @media screen and (max-width: 768px) {
   .fh5co-hero, .fh5co-parallax {
-    height: inherit;
+    height: 200px;
     padding: 4em 0;
   }
+
+  .fh5co-table, .fh5co-table-cell, .fh5co-hero, .fh5co-parallax {
+    height: 0px;
+  }
+
 }
 .fh5co-hero .fh5co-intro h1, .fh5co-parallax .fh5co-intro h1 {
   color: #fff;
