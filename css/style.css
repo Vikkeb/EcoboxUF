@@ -112,15 +112,6 @@ h1, h2, h3, h4, h5, h6 {
   background: #5BAC17;
 }
 
-#fh5co-intro-section, #fh5co-services-section, #fh5co-featured-work-section,
-#intro, #work, #footer, #contact, #about {
-  padding: 100px 0 50px 0;
-}
-
-#work {
-  padding-top: 0px;
-}
-
 header {
   display: flex;
   flex-direction: column;
@@ -815,6 +806,15 @@ background-image: url("images/recycle.svg");
   opacity: 1;
 }
 
+@media screen and (min-width: 1200px) {
+  .container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+}
 @media screen and (max-width: 768px) {
 
 .avatar {
@@ -903,7 +903,7 @@ input[type="text"] {
 }
 
 #footer {
-  padding-top: 3em;
+  padding: 3em;
   background-color: #eee;
 }
 
