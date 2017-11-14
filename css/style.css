@@ -150,6 +150,7 @@ header .active a {
 
 .navbar {
   border: 0;
+  min-height: 80px;
 }
 
 .row {
