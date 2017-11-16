@@ -12,54 +12,33 @@ $(document).ready(function(){
 	// Scrollspy initiation
 	$('body').scrollspy({
 		target: '#scroll-spy',
-		offset: 600
+		offset: 80
 	});
-
-	var navOffset = $('.navbar').height();
 
 	$('.navbar li a').click(function(event) {
-    var href = $(this).attr('href');
 
-	    // Don't let the browser scroll, but still update the current address
-	    // in the browser.
+  // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
 
-	    window.location.hash = href;
+    // Prevent default anchor click behavior
+    event.preventDefault();
 
-	    // Explicitly scroll to where the browser thinks the element
-	    // is, but apply the offset.
-	    $(href)[0].scrollIntoView();
-	    window.scrollBy(0, -navOffset);
-
-			// Make sure this.hash has a value before overriding default behavior
-			if (this.hash !== "") {
-
-			// Prevent default anchor click behavior
-    	event.preventDefault();
-
-			// Store hash (#)
-			var hash = this.hash;
-
-			// Ensure no section has relevant class
-			$('section').removeClass("active");
-
-			// Add class to target
-			$(hash).addClass("active");
+    // Store hash
+    var hash = this.hash;
 
     // Using jQuery's animate() method to add smooth page scroll
-    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area (the speed of the animation)
-			$('html, body').animate({
-				scrollTop: $(hash).offset().top
-			}, 600, function(){
+    // The optional number (600) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 600, function(){
 
-				// Add hash (#) to URL when done scrolling (default click behavior)
-					window.location.hash = hash;
-			});
+    // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+    });
 
-			// Collapse Navbar for mobile view
-			$(".navbar-collapse").collapse('hide');
-		}
+  } // End if
 
-	});
+});
 });
 
 ;(function () {
