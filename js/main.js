@@ -1,5 +1,5 @@
 $(window).scroll(function(){
-		if ($(window).scrollTop() >= 238) {
+		if ($(window).scrollTop() >= 245) {
 			 $('.navbar').addClass('navbar-fixed-top');
 		}
 		else {
@@ -15,11 +15,26 @@ $(document).ready(function(){
 		offset: 600
 	});
 
-	$('nav.navbar a, .scrollTop').click(function(event){
-		// Make sure this.hash has a value before overriding default behavior
-		if (this.hash !== "") {
+	var navOffset = $('.navbar').height();
+
+	$('.navbar li a').click(function(event) {
+    var href = $(this).attr('href');
+
+	    // Don't let the browser scroll, but still update the current address
+	    // in the browser.
+
+	    window.location.hash = href;
+
+	    // Explicitly scroll to where the browser thinks the element
+	    // is, but apply the offset.
+	    $(href)[0].scrollIntoView();
+	    window.scrollBy(0, -navOffset);
+
+			// Make sure this.hash has a value before overriding default behavior
+			if (this.hash !== "") {
+
 			// Prevent default anchor click behavior
-			event.preventDefault();
+    	event.preventDefault();
 
 			// Store hash (#)
 			var hash = this.hash;
@@ -37,7 +52,7 @@ $(document).ready(function(){
 			}, 600, function(){
 
 				// Add hash (#) to URL when done scrolling (default click behavior)
-				window.location.hash = hash;
+					window.location.hash = hash;
 			});
 
 			// Collapse Navbar for mobile view
