@@ -7,6 +7,8 @@ $(window).scroll(function(){
 		}
 });
 
+
+
 $(document).ready(function(){
 
 	// Add scrollspy to <body>
