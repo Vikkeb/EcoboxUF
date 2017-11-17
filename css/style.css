@@ -133,6 +133,7 @@ header .navbar {
   display: flex;
   justify-content: center;
   background-color: white;
+  padding: 0;
   margin-bottom: 0px;
   z-index: 10;
 }
@@ -167,7 +168,13 @@ header .active a {
 }
 
 .navbar li {
-  padding: 10px;
+  margin: 0 10px 0 10px;
+  text-decoration: none;
+}
+
+.navbar li a {
+  line-height: 80px;
+  text-decoration: none;
 }
 
 .row {

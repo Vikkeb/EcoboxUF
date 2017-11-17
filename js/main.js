@@ -9,11 +9,6 @@ $(window).scroll(function(){
 
 $(document).ready(function(){
 
-	// Scrollspy initiation
-	$('body').scrollspy({
-		target: '#scroll-spy',
-		offset: 80
-	});
 
 	$('.navbar li a').click(function(event) {
 
