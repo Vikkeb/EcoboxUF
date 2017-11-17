@@ -524,7 +524,7 @@ header .active a {
 
 @media screen and (max-width: 768px) {
   .fh5co-hero, .fh5co-parallax {
-    margin-top: 10px;
+    margin-top: 20px;
     height: 200px;
   }
 
