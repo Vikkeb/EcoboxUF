@@ -524,7 +524,7 @@ header .active a {
 
 @media screen and (max-width: 768px) {
   .fh5co-hero, .fh5co-parallax {
-    margin-top: 2.5em;
+    margin-top: 10px;
     height: 200px;
   }
 
@@ -808,7 +808,7 @@ background-image: url("images/recycle.svg");
 }
 
 .avatar {
-  margin: 0 10px 0 10px;
+  margin: 10px 10px 10px 10px;
   background-size: contain;
   padding-bottom: 25%;
 }
@@ -871,8 +871,9 @@ background-image: url("images/recycle.svg");
 }
 
 .container {
-  padding: 0;
+  padding: 0 10px 0 10px;
 }
+
 
 .heading-section{
   margin-top: 2.5em;
