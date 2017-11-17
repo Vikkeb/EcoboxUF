@@ -140,7 +140,6 @@ header .navbar {
 
 header a {
   color: #BDC4D0;
-  margin: 5px 0 5px 0;
 }
 
 header .logo {
@@ -155,7 +154,12 @@ header .logo {
 }
 
 nav .active {
+  color: #5AAC16;
   box-shadow: inset 0 -5px 0 0 #5AAC16;
+}
+
+.nav-link {
+  padding: 0;
 }
 
 header .active a {

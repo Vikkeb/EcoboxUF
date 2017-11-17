@@ -9,6 +9,8 @@ $(window).scroll(function(){
 
 $(document).ready(function(){
 
+	// Add scrollspy to <body>
+	$('body').scrollspy({target: ".navbar", offset: 80});
 
 	$('.navbar li a').click(function(event) {
 
