@@ -91,7 +91,7 @@ $(document).ready(function(){
 		   loop: true,
 		   margin: 0,
 		   responsiveClass: true,
-		   nav: true,
+		   nav: false,
 		   dots: true,
 		   smartSpeed: 500,
 		   navText: [
