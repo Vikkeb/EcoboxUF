@@ -748,9 +748,19 @@ background-image: url("images/recycle.svg");
   color: #000;
 }
 
-work {
+#work .container .row:nth-child(1) {
+    margin-bottom: 5em;
+}
+
+@media screen and (max-width: 768px) {
+
+#work .container .row {
+    margin-bottom: 0em !important;
+    margin-top: 2.5em;
+}
 
 }
+
 
 .fh5co-grid-work {
   margin-bottom: 60px;
