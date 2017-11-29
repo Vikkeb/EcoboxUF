@@ -589,6 +589,7 @@ header .active a {
   position: relative;
   margin-bottom: 40px;
 }
+
 .fh5co-services .holder-section {
   padding-left: 100px;
 }
@@ -596,6 +597,9 @@ header .active a {
   margin-bottom: 8px;
   font-weight: 400;
   font-weight: 20px;
+}
+.fh5co-services .holder-section p {
+  font-size: 18px;
 }
 
 .fh5co-table2 {
@@ -639,6 +643,9 @@ header .active a {
   margin-bottom: 8px;
   font-weight: 400;
   font-weight: 20px;
+}
+.fh5co-services-right .holder-section p {
+  font-size: 18px;
 }
 .fh5co-services-right .fh5co-table2 {
   display: table;
@@ -739,6 +746,10 @@ background-image: url("images/recycle.svg");
 }
 .blog-section h3 a {
   color: #000;
+}
+
+work {
+
 }
 
 .fh5co-grid-work {
